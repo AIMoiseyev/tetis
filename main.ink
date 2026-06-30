@@ -149,9 +149,9 @@ VAR cheeky=0
 *{dialog_K_II_1_complete && dialog_K_II_1}[Объявить готовность к посадке] -> dialog_K_II_4
 *{kicked_out_in_shame}[Спросить об отлёте] -> dialog_K_II_23
 *{decided_to_leave} [Спросить об отлёте] -> dialog_K_II_23
-# Научная станция диалоги с ассистентом
+# Ненаучная станция диалоги с ассистентом
 === S_A_knot === 
-#Location: Научная станция
+#Location: Ненаучная станция
 *{is_first_meeting && !dialog_S_A_1_completed}[Познакомиться] -> dialog_S_A_1
 *{is_setting_in && !dialog_S_A_2_completed}[Спросить о директоре] -> dialog_S_A_2
 *{is_setting_in && !dialog_S_A_3_completed}[Спросить о компьютере] -> dialog_S_A_3
@@ -163,9 +163,9 @@ VAR cheeky=0
 + [Решить куда пойти]-> navigation_hub
 + -> dialog_s_a_no_phrase
 
-# Научная станция диалоги с Директором
+# Ненаучная станция диалоги с Директором
 === S_D_knot ===
-#Location: Научная станция
+#Location: Ненаучная станция
 *{is_first_meeting && !dialog_S_D_1_completed && !settling_in}[Познакомиться с директором] -> dialog_S_D_1
 *{dialog_S_D_1 && !dialog_S_D_2_completed&& !settling_in}[Спросить, что теперь делать] -> dialog_S_D_2
 *{dialog_S_K_8_completed && !dialog_S_D_3_completed}[Обвинить учёную] -> dialog_S_D_3
@@ -274,7 +274,7 @@ research_station_location
 +[Вернуться в центр островка] -> navigation_hub
 
 === research_station_location === 
-#Location: Научная станция
+#Location: Ненаучная станция
 Вы на территории научной станции.
 +[Поболтать с медведем-конструктором во дворе] -> S_K_knot
 +[Обратиться к ассистенту директора] -> S_A_knot
