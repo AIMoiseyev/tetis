@@ -240,7 +240,7 @@ research_station_location
 + -> dialog_b_b_no_phrase
 
 === S_B_knot ===
-#Location: Кабинет ученой
+#Location: Кабинет ученой медведицы
 *{is_first_meeting && !dialog_S_B_0_completed}[Познакомиться] -> dialog_S_B_0
 *{dialog_S_K_2_completed && !dialog_S_B_1_completed}[Использовать аргумент судьбы] -> dialog_S_B_1
 *{dialog_S_B_1_completed && !dialog_S_B_2_completed}[Использовать аргумент навыков] -> dialog_S_B_2
